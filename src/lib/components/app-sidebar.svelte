@@ -1,9 +1,7 @@
 <script lang="ts">
- import CalendarIcon from "@lucide/svelte/icons/calendar";
- import LayoutDashboard from "@lucide/svelte/icons/layout-dashboard"
- import InboxIcon from "@lucide/svelte/icons/inbox";
- import SearchIcon from "@lucide/svelte/icons/search";
- import SettingsIcon from "@lucide/svelte/icons/settings";
+ import LibraryIcon from "@lucide/svelte/icons/library-big";
+ import LayoutDashboardIcon from "@lucide/svelte/icons/layout-dashboard"
+ import MapIcon from "@lucide/svelte/icons/map";
  import * as Sidebar from "$lib/components/ui/sidebar/index.js";
  
  // Menu items.
@@ -11,27 +9,17 @@
   {
    title: "ダッシュボード",
    url: "#",
-   icon: LayoutDashboard,
+   icon: LayoutDashboardIcon,
   },
   {
-   title: "Inbox",
+   title: "クエスト",
    url: "#",
-   icon: InboxIcon,
+   icon: MapIcon,
   },
   {
-   title: "Calendar",
+   title: "ナレッジ",
    url: "#",
-   icon: CalendarIcon,
-  },
-  {
-   title: "Search",
-   url: "#",
-   icon: SearchIcon,
-  },
-  {
-   title: "Settings",
-   url: "#",
-   icon: SettingsIcon,
+   icon: LibraryIcon,
   },
  ];
 </script>
