@@ -9,7 +9,7 @@
 				outline: "bg-background hover:bg-sidebar-accent hover:text-sidebar-accent-foreground shadow-[0_0_0_1px_hsl(var(--sidebar-border))] hover:shadow-[0_0_0_1px_hsl(var(--sidebar-accent))]",
 			},
 			size: {
-				default: "h-9 text-sm",
+				default: "h-11 text-xl",
 				sm: "h-8 text-xs",
 				lg: "h-14 px-3 text-sm group-data-[collapsible=icon]:p-0!",
 			},
