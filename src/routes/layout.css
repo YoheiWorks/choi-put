@@ -30,12 +30,12 @@
 	--chart-4: oklch(0.371 0 0);
 	--chart-5: oklch(0.269 0 0);
 	--radius: 0.625rem;
-	--sidebar: oklch(0.985 0 0);
+	--sidebar: #ffffff;
 	--sidebar-foreground: #627289;
 	--sidebar-primary: oklch(0.541 0.281 293.009);
 	--sidebar-primary-foreground: oklch(0.969 0.016 293.756);
-	--sidebar-accent: oklch(0.97 0 0);
-	--sidebar-accent-foreground: oklch(0.205 0 0);
+	--sidebar-accent: rgba(243, 241, 255, 1);
+	--sidebar-accent-foreground: rgba(139, 62, 251, 1);
 	--sidebar-border: oklch(0.922 0 0);
 	--sidebar-ring: oklch(0.708 0 0);
 }
