@@ -22,7 +22,7 @@
 	data-sidebar="trigger"
 	data-slot="sidebar-trigger"
 	variant="ghost"
-	size="icon-sm"
+	size="icon-lg"
 	class={cn("cn-sidebar-trigger", className)}
 	type="button"
 	onclick={(e) => {
