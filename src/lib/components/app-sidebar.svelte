@@ -25,10 +25,11 @@
 </script>
  
 <Sidebar.Root collapsible='icon'>
- <Sidebar.Content>
-  <Sidebar.Group>
-   <Sidebar.GroupContent>
-    <Sidebar.Menu>
+    <Sidebar.Content>
+        <Sidebar.Group>
+            <Sidebar.GroupContent>
+                <Sidebar.Menu>
+                    <Sidebar.Trigger />
      {#each items as item (item.title)}
       <Sidebar.MenuItem>
        <Sidebar.MenuButton>
