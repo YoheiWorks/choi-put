@@ -36,7 +36,7 @@
  ];
 </script>
  
-<Sidebar.Root>
+<Sidebar.Root collapsible='icon'>
  <Sidebar.Content>
   <Sidebar.Group>
    <!-- <Sidebar.GroupLabel>choi-put</Sidebar.GroupLabel> -->
