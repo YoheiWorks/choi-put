@@ -1,27 +1,28 @@
 <script lang="ts">
- import LibraryIcon from "@lucide/svelte/icons/library-big";
- import LayoutDashboardIcon from "@lucide/svelte/icons/layout-dashboard"
- import MapIcon from "@lucide/svelte/icons/map";
- import * as Sidebar from "$lib/components/ui/sidebar/index.js";
+    import { page } from '$app/state';
+    import LibraryIcon from "@lucide/svelte/icons/library-big";
+    import LayoutDashboardIcon from "@lucide/svelte/icons/layout-dashboard"
+    import MapIcon from "@lucide/svelte/icons/map";
+    import * as Sidebar from "$lib/components/ui/sidebar/index.js";
  
- // Menu items.
- const items = [
-  {
-   title: "ダッシュボード",
-   url: "#",
-   icon: LayoutDashboardIcon,
-  },
-  {
-   title: "クエスト",
-   url: "#",
-   icon: MapIcon,
-  },
-  {
-   title: "ナレッジ",
-   url: "#",
-   icon: LibraryIcon,
-  },
- ];
+    // Menu items.
+    const items = [
+    {
+    title: "ダッシュボード",
+    url: "/dashboard",
+    icon: LayoutDashboardIcon,
+    },
+    {
+    title: "クエスト",
+    url: "/quest",
+    icon: MapIcon,
+    },
+    {
+    title: "ナレッジ",
+    url: "/knowledge",
+    icon: LibraryIcon,
+    },
+    ];
 </script>
  
 <Sidebar.Root collapsible='icon'>
@@ -32,7 +33,7 @@
                     <Sidebar.Trigger />
      {#each items as item (item.title)}
       <Sidebar.MenuItem>
-       <Sidebar.MenuButton>
+       <Sidebar.MenuButton isActive={page.url.pathname === item.url}>
         {#snippet child({ props })}
          <a href={item.url} {...props}>
           <item.icon />
