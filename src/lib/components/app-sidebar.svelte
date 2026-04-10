@@ -8,19 +8,19 @@
     // Menu items.
     const items = [
     {
-    title: "ダッシュボード",
-    url: "/dashboard",
-    icon: LayoutDashboardIcon,
+        title: "ダッシュボード",
+        url: "/",
+        icon: LayoutDashboardIcon,
     },
     {
-    title: "クエスト",
-    url: "/quest",
-    icon: MapIcon,
+        title: "クエスト",
+        url: "/quests",
+        icon: MapIcon,
     },
     {
-    title: "ナレッジ",
-    url: "/knowledge",
-    icon: LibraryIcon,
+        title: "ナレッジ",
+        url: "/knowledge",
+        icon: LibraryIcon,
     },
     ];
 </script>
